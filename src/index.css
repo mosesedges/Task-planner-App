@@ -165,16 +165,23 @@ body {
   width: 13px;
 }
 
-.icon2 {
+.icon2,
+.iconNone {
   display: inline-block;
   position: relative;
-  color: rebeccapurple;
+  color: rgb(122, 3, 241);
   padding: 3px;
-  width: 30px;
-  height: 25px;
+  width: 50px;
+  height: 35px;
   margin: 0 25px;
   right: -12%;
   cursor: pointer;
+  outline: none;
+}
+
+.iconNone {
+  color: rgba(83, 83, 83, 0.5);
+  outline: none;
 }
 
 .reminder {
@@ -183,4 +190,20 @@ body {
 
 .task-day {
   font-size: large;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .header-container h1 {
+    width: 50%;
+    font-size: 1.5em;
+    margin: 12px 2px 12px 18px;
+  }
+  .button-container .btn {
+    color: white;
+    margin: 30px 0;
+    padding: 9px;
+    font-size: small;
+    width: 90%;
+  }
 }

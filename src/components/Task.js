@@ -10,9 +10,9 @@ const Task = ({ task, onDelete, reminder }) => {
         {task.text}
         <FaTrashAlt onClick={onDelete} className="icon" />
       </h3>
-      <p className="task-day" data-tip="Double Click to Set or Remove Reminder">
+      <p className="task-day">
         {" "}
-        {task.dayTime} {task.reminder && <BiTimer className="icon2" />}
+        {task.dayTime} {task.reminder ? (<BiTimer className="icon2" data-tip="Double Click to Remove Reminder"/>):(<BiTimer className="iconNone" data-tip="Double Click to Set Reminder"/>)}
         <ReactTooltip />
       </p>
     </section>
