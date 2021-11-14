@@ -17,16 +17,16 @@ const Tasks = ({ tasks, onDelete, reminder }) => {
   );
 };
 
-Tasks.defaultProps = {
-  tasks: [
-    {
-      id: 1,
-      text: "Milk the Cow",
-      day: "Nov 5th at 10am",
-      reminder: true,
-    },
-  ],
-};
+// Tasks.defaultProps = {
+//   tasks: [
+//     {
+//       id: 1,
+//       text: "Milk the Cow",
+//       day: "Nov 5th at 10am",
+//       reminder: true,
+//     },
+//   ],
+// };
 
 Tasks.propTypes = {
   tasks: PropTypes.array.isRequired,

@@ -1,20 +1,20 @@
 export const Data = [
   {
-    text: "Post on Github",
-    dayTime: "Nov 5th at 10am",
+    text: "Work Out",
+    dayTime: "Mon-Sat at 6am",
     reminder: true,
     id: 1,
   },
   {
-    text: "Update django DRF",
-    dayTime: "Nov 5th at 6:30pm",
+    text: "Read a Chapter of Django CookBook",
+    dayTime: "Mon-Sun at 7:45pm",
     reminder: true,
-    id: 3,
+    id: 2,
   },
   {
-    text: "Call Kevin",
-    dayTime: "Nov 5th at 4:30pm",
+    text: "Get Tech Update",
+    dayTime: "Mon & Thur at 6:30pm",
     reminder: false,
-    id: 4,
+    id: 3,
   },
 ];

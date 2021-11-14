@@ -115,6 +115,12 @@ body {
   margin-bottom: 12px;
 }
 
+.no-task {
+  text-align: center;
+  font-size: 1.5em;
+  color: rebeccapurple;
+}
+
 .submit:hover {
   background-color: rebeccapurple;
   animation: submit 0.5s linear 2s infinite alternate;

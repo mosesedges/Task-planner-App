@@ -9,20 +9,6 @@ function App() {
   const [tasks, setTasks] = useState(Data);
   const [addTasks, setAddTasks] = useState(false);
 
-  //fetch tasks
-  const fetchTasks = async () => {
-    const response = await fetch("http://localhost:5000/tasks");
-    const data = await response.json();
-    return data;
-  };
-
-  //fetch task
-  const fetchTask = async (id) => {
-    const response = await fetch(`http://localhost:5000/tasks/${id}`);
-    const data = await response.json();
-    return data;
-  };
-
   // add task
   const addNewTask = (task) => {
     const id = Math.floor(Math.random() * 1000) + 1;
@@ -55,7 +41,7 @@ function App() {
       {tasks.length > 0 ? (
         <Tasks tasks={tasks} onDelete={deleteTask} reminder={reminder} />
       ) : (
-        "No task left, add a task and set a reminder"
+        <p className="no-task">No task left, add task and set a reminder</p>
       )}
       <div>
         <button className="btn-clear" onClick={() => setTasks([])}>
